@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+      .dashboard-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .viz-container {
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Customer Churn Prediction Dashboard</h1>
+        <p>Model performance and insights</p>
+        <a href="/" class="btn btn-primary">Back to Prediction</a>
+      </div>
+
+      <div class="dashboard-container">
+        <div class="row">
+          <div class="col-md-6 viz-container">
+            <h3>Confusion Matrix</h3>
+            <img
+              src="{{ url_for('static', filename='confusion_matrix.png') }}"
+              alt="Confusion Matrix"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 viz-container">
+            <h3>ROC Curve</h3>
+            <img
+              src="{{ url_for('static', filename='roc_curve.png') }}"
+              alt="ROC Curve"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <div class="viz-container">
+          <h3>Feature Importance</h3>
+          <img
+            src="{{ url_for('static', filename='feature_importance.png') }}"
+            alt="Feature Importance"
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Key Insights</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                Contract type is one of the most important predictors of churn
+              </li>
+              <li class="list-group-item">
+                Customers with month-to-month contracts are more likely to churn
+              </li>
+              <li class="list-group-item">
+                Longer tenure is associated with lower churn probability
+              </li>
+              <li class="list-group-item">
+                Fiber optic internet service customers have higher churn rates
+              </li>
+              <li class="list-group-item">
+                Customers with online security and tech support are less likely
+                to churn
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

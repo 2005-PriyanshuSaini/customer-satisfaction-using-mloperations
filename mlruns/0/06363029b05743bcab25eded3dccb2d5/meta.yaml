@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/06363029b05743bcab25eded3dccb2d5/artifacts
+end_time: 1745508836736
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 06363029b05743bcab25eded3dccb2d5
+run_name: wistful-hawk-385
+run_uuid: 06363029b05743bcab25eded3dccb2d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745508836726
+status: 3
+tags: []
+user_id: shivagupta

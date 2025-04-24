@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/7e39ad345168421d9746ddfdbbd49e44/artifacts
+end_time: 1745508750496
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7e39ad345168421d9746ddfdbbd49e44
+run_name: ambitious-perch-131
+run_uuid: 7e39ad345168421d9746ddfdbbd49e44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745508748718
+status: 3
+tags: []
+user_id: shivagupta

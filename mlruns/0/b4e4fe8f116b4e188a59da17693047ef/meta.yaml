@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/b4e4fe8f116b4e188a59da17693047ef/artifacts
+end_time: 1745510428013
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b4e4fe8f116b4e188a59da17693047ef
+run_name: delightful-toad-939
+run_uuid: b4e4fe8f116b4e188a59da17693047ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745510425765
+status: 3
+tags: []
+user_id: shivagupta

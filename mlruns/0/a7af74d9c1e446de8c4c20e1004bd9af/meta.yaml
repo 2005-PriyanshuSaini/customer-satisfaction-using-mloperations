@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/a7af74d9c1e446de8c4c20e1004bd9af/artifacts
+end_time: 1745510651136
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a7af74d9c1e446de8c4c20e1004bd9af
+run_name: omniscient-grub-45
+run_uuid: a7af74d9c1e446de8c4c20e1004bd9af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745510651130
+status: 3
+tags: []
+user_id: shivagupta

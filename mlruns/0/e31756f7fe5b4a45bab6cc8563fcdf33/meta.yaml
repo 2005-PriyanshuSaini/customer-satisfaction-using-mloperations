@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/e31756f7fe5b4a45bab6cc8563fcdf33/artifacts
+end_time: 1745510536635
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e31756f7fe5b4a45bab6cc8563fcdf33
+run_name: likeable-pug-34
+run_uuid: e31756f7fe5b4a45bab6cc8563fcdf33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745510534305
+status: 3
+tags: []
+user_id: shivagupta

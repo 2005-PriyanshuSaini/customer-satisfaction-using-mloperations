@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/ac76a909471d47d28c2fb2905809a89f/artifacts
+end_time: 1745508744076
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ac76a909471d47d28c2fb2905809a89f
+run_name: omniscient-crane-821
+run_uuid: ac76a909471d47d28c2fb2905809a89f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745508744066
+status: 3
+tags: []
+user_id: shivagupta

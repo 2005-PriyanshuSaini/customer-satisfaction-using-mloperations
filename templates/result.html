@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction Result</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+      .result-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .churn {
+        color: #dc3545;
+        font-weight: bold;
+      }
+      .no-churn {
+        color: #28a745;
+        font-weight: bold;
+      }
+      .probability {
+        font-size: 24px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="result-container">
+        <h1>Prediction Result</h1>
+
+        {% if prediction %}
+        <h2 class="churn">This customer is likely to churn!</h2>
+        {% else %}
+        <h2 class="no-churn">This customer is likely to stay!</h2>
+        {% endif %}
+
+        <div class="probability">
+          <p>Churn Probability: <strong>{{ probability }}%</strong></p>
+
+          <div class="progress">
+            <div
+              class="progress-bar {% if prediction %}bg-danger{% else %}bg-success{% endif %}"
+              role="progressbar"
+              style="width: {{ probability }}%"
+              aria-valuenow="{{ probability }}"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              {{ probability }}%
+            </div>
+          </div>
+        </div>
+
+        <a href="/" class="btn btn-primary">Make Another Prediction</a>
+        <a href="/dashboard" class="btn btn-info">View Dashboard</a>
+      </div>
+    </div>
+  </body>
+</html>

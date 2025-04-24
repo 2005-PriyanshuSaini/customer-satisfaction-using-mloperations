@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/898afb9db74944ffaa08e5b5037bce40/artifacts
+end_time: 1745508725595
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 898afb9db74944ffaa08e5b5037bce40
+run_name: treasured-mule-529
+run_uuid: 898afb9db74944ffaa08e5b5037bce40
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745508723708
+status: 3
+tags: []
+user_id: shivagupta

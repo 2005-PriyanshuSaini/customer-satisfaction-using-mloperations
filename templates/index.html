@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telecom Customer Churn Prediction</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+      .form-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Telecom Customer Churn Prediction</h1>
+        <p>Enter customer details to predict churn probability</p>
+        <a href="/dashboard" class="btn btn-info">View Dashboard</a>
+      </div>
+
+      <div class="form-container">
+        <form action="/predict" method="post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender" required>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="SeniorCitizen">Senior Citizen</label>
+                <select
+                  class="form-control"
+                  id="SeniorCitizen"
+                  name="SeniorCitizen"
+                  required
+                >
+                  <option value="0">No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Partner">Partner</label>
+                <select
+                  class="form-control"
+                  id="Partner"
+                  name="Partner"
+                  required
+                >
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Dependents">Dependents</label>
+                <select
+                  class="form-control"
+                  id="Dependents"
+                  name="Dependents"
+                  required
+                >
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="tenure">Tenure (months)</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="tenure"
+                  name="tenure"
+                  min="0"
+                  max="72"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="PhoneService">Phone Service</label>
+                <select
+                  class="form-control"
+                  id="PhoneService"
+                  name="PhoneService"
+                  required
+                >
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="MultipleLines">Multiple Lines</label>
+                <select
+                  class="form-control"
+                  id="MultipleLines"
+                  name="MultipleLines"
+                  required
+                >
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No phone service">No phone service</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="InternetService">Internet Service</label>
+                <select
+                  class="form-control"
+                  id="InternetService"
+                  name="InternetService"
+                  required
+                >
+                  <option value="DSL">DSL</option>
+                  <option value="Fiber optic">Fiber optic</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="OnlineSecurity">Online Security</label>
+                <select
+                  class="form-control"
+                  id="OnlineSecurity"
+                  name="OnlineSecurity"
+                  required
+                >
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No internet service">
+                    No internet service
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="OnlineBackup">Online Backup</label>
+                <select
+                  class="form-control"
+                  id="OnlineBackup"
+                  name="OnlineBackup"
+                  required
+                >
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No internet service">
+                    No internet service
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Contract">Contract</label>
+                <select
+                  class="form-control"
+                  id="Contract"
+                  name="Contract"
+                  required
+                >
+                  <option value="Month-to-month">Month-to-month</option>
+                  <option value="One year">One year</option>
+                  <option value="Two year">Two year</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="PaperlessBilling">Paperless Billing</label>
+                <select
+                  class="form-control"
+                  id="PaperlessBilling"
+                  name="PaperlessBilling"
+                  required
+                >
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="PaymentMethod">Payment Method</label>
+                <select
+                  class="form-control"
+                  id="PaymentMethod"
+                  name="PaymentMethod"
+                  required
+                >
+                  <option value="Electronic check">Electronic check</option>
+                  <option value="Mailed check">Mailed check</option>
+                  <option value="Bank transfer (automatic)">
+                    Bank transfer (automatic)
+                  </option>
+                  <option value="Credit card (automatic)">
+                    Credit card (automatic)
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="MonthlyCharges">Monthly Charges</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="MonthlyCharges"
+                  name="MonthlyCharges"
+                  min="0"
+                  step="0.01"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="TotalCharges">Total Charges</label>
+            <input
+              type="number"
+              class="form-control"
+              id="TotalCharges"
+              name="TotalCharges"
+              min="0"
+              step="0.01"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Predict Churn
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
