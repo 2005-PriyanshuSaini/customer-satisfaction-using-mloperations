@@ -9,13 +9,13 @@ from mlflow.models import infer_signature
 from data_preparation import prepare_data
 
 def train_model():
-    # Prepare the data
+    # Prepare data
     X_train, X_test, y_train, y_test, df = prepare_data()
     
-    # Start MLflow run
+    # Start MLflow
     mlflow.start_run()
     
-    # Train the model
+    # Train model
     model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X_train, y_train)
     
@@ -35,13 +35,13 @@ def train_model():
     mlflow.log_metric("recall", recall)
     mlflow.log_metric("f1_score", f1)
     
-    # Create an input example for model signature
+    # Example for model signature
     input_example = X_train[:5]  # Using first 5 samples as example
     
     # Infer the model signature
     signature = infer_signature(X_train, y_prob)
     
-    # Log model to MLflow with input example and signature
+    # Log model 
     mlflow.sklearn.log_model(
         model, 
         "random_forest_model",

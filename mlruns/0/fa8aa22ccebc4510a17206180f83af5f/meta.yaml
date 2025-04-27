@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/fa8aa22ccebc4510a17206180f83af5f/artifacts
+end_time: 1745561276106
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa8aa22ccebc4510a17206180f83af5f
+run_name: puzzled-trout-614
+run_uuid: fa8aa22ccebc4510a17206180f83af5f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745561275930
+status: 3
+tags: []
+user_id: Priyanshu

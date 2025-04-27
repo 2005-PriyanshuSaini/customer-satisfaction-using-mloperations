@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/9b7314344d9d4422a38e8e364c1e83c1/artifacts
+end_time: 1745561234754
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9b7314344d9d4422a38e8e364c1e83c1
+run_name: persistent-crow-640
+run_uuid: 9b7314344d9d4422a38e8e364c1e83c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745561230619
+status: 3
+tags: []
+user_id: Priyanshu

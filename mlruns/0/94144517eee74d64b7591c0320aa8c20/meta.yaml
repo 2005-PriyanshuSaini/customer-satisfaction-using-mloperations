@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/94144517eee74d64b7591c0320aa8c20/artifacts
+end_time: 1745517220893
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 94144517eee74d64b7591c0320aa8c20
+run_name: abrasive-hound-291
+run_uuid: 94144517eee74d64b7591c0320aa8c20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745517220787
+status: 3
+tags: []
+user_id: Priyanshu

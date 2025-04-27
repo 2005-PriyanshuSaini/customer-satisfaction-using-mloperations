@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/8a3e98d3bae446a3bba2452fca793cbc/artifacts
+end_time: 1745561185923
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8a3e98d3bae446a3bba2452fca793cbc
+run_name: efficient-koi-425
+run_uuid: 8a3e98d3bae446a3bba2452fca793cbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745561171249
+status: 3
+tags: []
+user_id: Priyanshu

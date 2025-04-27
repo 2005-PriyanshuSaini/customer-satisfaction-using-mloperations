@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shivagupta/customer_satisfaction_mlops/mlruns/0/e7a76fd601534238b6e071d5204765f9/artifacts
+end_time: 1745517153085
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e7a76fd601534238b6e071d5204765f9
+run_name: resilient-asp-289
+run_uuid: e7a76fd601534238b6e071d5204765f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745517146406
+status: 3
+tags: []
+user_id: Priyanshu
