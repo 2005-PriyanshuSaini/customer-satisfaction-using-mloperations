@@ -105,9 +105,10 @@ Our framework demonstrates significant improvements over traditional approaches:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT License](LICENSE) © 2025 Priyanshu-Saini, Shiva-Gupta, Deyant-Kashyap, Uchit-Yadav, Shagun-Verma
 
 ## Acknowledgements
 

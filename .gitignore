@@ -1,0 +1,87 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Pytest cache
+.pytest_cache/
+
+# VS Code and other IDE settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Data files
+data/
+*.csv
+*.tsv
+*.data
+*.dat
+*.db
+*.sqlite
+*.h5
+*.hdf5
+
+# Model files
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# Logs and outputs
+*.log
+logs/
+output/
+outputs/
+results/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# OS and system files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.*
+secrets.*
+config.json
+
+# Conda environment
+*.conda
+*.yml
+*.yaml
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Ignore everything in temp folders
+temp/
