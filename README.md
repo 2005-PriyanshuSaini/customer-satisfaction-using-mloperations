@@ -1,21 +1,27 @@
-# Customer Satisfaction MLOps Project
+# 🚀 Customer Satisfaction MLOps Project
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+
+> **A Production-Ready MLOps Framework for Customer Satisfaction Prediction.**
 This project implements a comprehensive MLOps framework for customer satisfaction prediction, focusing on enhancing the accuracy, reliability, and actionability of customer experience insights. By integrating advanced machine learning techniques with operational best practices, this system overcomes traditional limitations in customer satisfaction analysis.
 
-## Overview
+## 🚀 Overview
 
-Traditional customer satisfaction metrics like Net Promoter Score (NPS) often suffer from methodological limitations and operational challenges. This project addresses these issues by implementing a robust MLOps pipeline that handles the complete lifecycle of machine learning models from development to deployment and continuous monitoring.
+This project solves the limitations of traditional customer satisfaction analysis using a production-grade MLOps pipeline.  
+Key innovations:
+- **Higher Accuracy**: Boosts prediction performance from 50-60% ➔ 70-85%.
+- **Bias Segmentation**: Corrects systemic biases in NPS-based surveys.
+- **Operational Excellence**: Continuous model monitoring, retraining, and explainability.
 
-The framework significantly improves prediction accuracy (from 50-60% with conventional methods to 70-85% with our approach) by implementing novel techniques such as NPS bias classification and continuous model adaptation.
+## 🌟 Key Features
 
-## Key Features
-
-- **Multi-Source Data Ingestion**: Automated collection of structured and unstructured data from NPS surveys, transaction logs, social media sentiment, and customer service transcripts
-- **Advanced Feature Engineering**: Implementation of NPS Bias metric to segment customers into positively and negatively biased cohorts
-- **Synthetic Data Generation**: Uses Gaussian copulas to create synthetic samples that maintain original data distributions
-- **Automated Model Monitoring**: Continuous tracking of model performance with drift detection and automated retraining
-- **Interpretability Tools**: Methods for explaining model predictions in business-relevant terms
-- **Business Intelligence Integration**: Comprehensive integration with existing BI tools
+| | |
+|:---|:---|
+| 🚀 Multi-Source Data Ingestion | 📈 Advanced Feature Engineering |
+| 🧬 Synthetic Data Generation | 🔍 Model Interpretability Tools |
+| 🛡️ Automated Drift Detection | 🛠️ Business Intelligence Integration |
 
 ## Technical Architecture
 
@@ -29,6 +35,7 @@ The project implements a ZenML pipeline architecture with the following componen
 
 ## Installation
 
+⚡ If you face any environment issues on Windows, make sure to use:
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/customer_satisfaction_mlops.git
@@ -97,16 +104,16 @@ Our framework demonstrates significant improvements over traditional approaches:
 
 ## Future Directions
 
-- **NLP Integration**: Analyzing free-text comments to uncover hidden reasons for dissatisfaction
-- **Federated Learning**: Implementing cross-industry benchmarking with data privacy
-- **Real-time Analytics**: Integrating edge computing for low-latency insights during customer interactions
+- [ ] Integrate NLP for analyzing customer comments
+- [ ] Implement Federated Learning for privacy-preserving benchmarking
+- [ ] Enable real-time analytics with Edge computing
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-## License
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE) © 2025 Priyanshu-Saini, Shiva-Gupta, Deyant-Kashyap, Uchit-Yadav, Shagun-Verma
 
